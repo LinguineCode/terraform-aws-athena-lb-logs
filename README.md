@@ -13,7 +13,7 @@ A terraform module that creates resources to be able to query Load Balancer Acce
 
 ```
 module "athena-lb-logs" {
-  source = "github.com/seanscottking/terraform-aws-athena-lb-logs.git""
+  source = "github.com/solsglasses/terraform-aws-athena-lb-logs.git""
 
   name           = "mylbaccesslogs"
   s3_bucket_name = "${module.s3_bucket.s3_bucket_id}"
